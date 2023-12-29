@@ -22,6 +22,55 @@
 - It is built on top of one of the fastest and real-time data indexing engine - PowerIndeX.
 - It is low level (raw) form of data and is also human readable.
 - It helps developers in faster coding, in-turn reduces development cost.
+# Table of contents
+-Roll-No
+- Full-Name
+-  Class
+-   Birth-Date
+-  Address
+-   Enrollment-Date
+# Scope of Functionalities
+The School Record Management System aims to provide the following functionalities:
+
+## View Student Data:
+
+Users can enter a Roll-No to view and edit student information, including Full Name, Class, Birth-Date, and Address.
+## Save Data:
+
+Users can save new student records to the database by entering relevant information in the form and clicking the "Save" button.
+## Update Data:
+
+Existing student records can be updated by entering the Roll-No, modifying details, and clicking the "Update" button.
+
+## Reset Form:
+The "Reset" button allows users to clear the form, preparing it for a new data entry.
+
+# Examples of Use
+Saving New Record
+Open the system in a web browser.
+Enter the Roll-No, Full Name, Class, Birth-Date, and Address in the respective fields.
+Click the "Save" button to add a new student record to the database.
+Updating Existing Record
+Enter the Roll-No of the student whose information needs to be updated.
+Modify the required fields (Full Name, Class, Birth-Date, or Address).
+Click the "Update" button to save the changes to the database.
+Resetting Form
+Click the "Reset" button to clear all fields in the form.
+Start fresh for a new data entry.
+
+# Sources
+The project uses the following dependencies:
+
+Bootstrap v5.3.2: Bootstrap is a popular front-end framework for building responsive and visually appealing web pages.
+
+jQuery v3.6.4: jQuery is a fast and feature-rich JavaScript library that simplifies client-side scripting.
+
+JPDB Commons Library v0.0.3: The JPDB Commons Library is utilized for basic CRUD operations with the JSON database. JPDB Documentation.
+
+# Project Status
+The project is currently in the early development stage. Basic functionalities such as viewing, saving, and updating records are implemented. Further enhancements and features may be added in future releases.
+
+
 
 # Dependencies
 # Bootstrap v5.3.2
@@ -29,10 +78,5 @@
 # JPDB Commons Library v0.0.3
 
 
-### Screenshots:
-
-![Dashboard](https://www.awesomescreenshot.com/image/45118737?key=fe422e03857e7a4072ad0b56f67a125a)
-
-![Index Page](chrome-extension://nlipoenfbbikpbjkfpfillcgkoblgpmj/edit-react.html)
 
 # Thanks
