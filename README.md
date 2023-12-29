@@ -31,7 +31,7 @@
 
 ### Screenshots:
 
-![Dashboard](chrome-extension://nlipoenfbbikpbjkfpfillcgkoblgpmj/edit-react.html)
+![Dashboard](http://tinyurl.com/ykhgl4zh))
 
 ![Index Page](chrome-extension://nlipoenfbbikpbjkfpfillcgkoblgpmj/edit-react.html)
 
