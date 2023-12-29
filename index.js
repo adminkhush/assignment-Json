@@ -81,30 +81,34 @@ var jsonStrobj={
 return JSON.stringify(jsonStrobj);
 
    }
-function getRollNo(){
-    var rollnoJsonObj=getRollnoAsJsonobj();
-var getRequest=createGET_BY_KEYRequest(connToken,schoolDbName,schoolRelationName,rollnoJsonObj);
-jQuery.ajaxSetup({async: false});
-var resJsonobj=executeCommandAtGivenBaseUrl(getRequest,baseUrl,irlPartUrl);
-jQuery.ajaxSetup({async: true});
-if(resJsonobj.status===400){
+function getRollNo()
+{
+      var rollnoJsonObj=getRollnoAsJsonobj();
+      var getRequest=createGET_BY_KEYRequest(connToken,schoolDbName,schoolRelationName,rollnoJsonObj);
+      jQuery.ajaxSetup({async: false});
+      var resJsonobj=executeCommandAtGivenBaseUrl(getRequest,baseUrl,irlPartUrl);
+      jQuery.ajaxSetup({async: true});
+ if(resJsonobj.status===400)
+{
     $("#save").prop("disabled",false);
     $("#update").prop("disabled",false);
     $("#reset").prop("disabled",false);
     $("#rollno").focus();
 }
-else if (resJsonobj.status===200){
-$("#rollno").prop("disabled",true);
-fillData(resJsonobj);
-$("#update").prop("disabled",false);
-$("#reset").prop("disabled",false);
-$("#rollno").focus();
+ else if (resJsonobj.status===200){
+    $("#rollno").prop("disabled",true);
+    fillData(resJsonobj);
+    $("#update").prop("disabled",false);
+    $("#reset").prop("disabled",false);
+    $("#rollno").focus();
 
 }
 }
-function saveData(){
+function saveData()
+{
     var jsonStrobj =validateData();
-    if (jsonStrobj===""){
+    if (jsonStrobj==="")
+    {
         return "";
     }
     putRequest= createPUTRequest(connToken,jsonStrobj,schoolDbName,schoolRelationName);
@@ -113,11 +117,12 @@ function saveData(){
     jQuery.ajaxSetup({async: true});
     console.log(resJsonobj);
 
-resetForm();
-$("#rollno").focus();
+   resetForm();
+   $("#rollno").focus();
 
 }
-function updateData(){
+function updateData()
+{
     $("#update").prop("disabled",true);
     jsonChg=validateData();
 
@@ -127,6 +132,6 @@ function updateData(){
     jQuery.ajaxSetup({async: true});
     console.log(resJsonobj);
     resetForm();
-$("#rollno").focus();
+    $("#rollno").focus();
 
 }
