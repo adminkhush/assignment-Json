@@ -31,7 +31,7 @@
 
 ### Screenshots:
 
-![Dashboard](http://tinyurl.com/ykhgl4zh))
+![Dashboard](https://www.awesomescreenshot.com/image/45118737?key=fe422e03857e7a4072ad0b56f67a125a)
 
 ![Index Page](chrome-extension://nlipoenfbbikpbjkfpfillcgkoblgpmj/edit-react.html)
 
